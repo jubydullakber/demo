@@ -31,17 +31,9 @@ For Containerize used Docker.can run with command docker-compose up.
 # Trace
 For distributed tracing used zipkin server.url : http://localhost:9411/zipkin/
 
-# Api List 
-Find all active student /api/v1/student
-Find active student by name /api/v1/student/{name}
-Create a student :8080/api/v1/student
-  Request Body :
-  {
-    "name":""
-  }
-Update a student/api/v1/student/{name}
-Request Body :
-  {
-    "name":""
-  }
-Delete a student /api/v1/student/{name}
+## Explore Rest APIs
+* Find all active student /api/v1/student
+* Find active student by name /api/v1/student/{name}
+* Create a student :8080/api/v1/student
+* Update a student/api/v1/student/{name}
+* Delete a student /api/v1/student/{name}
