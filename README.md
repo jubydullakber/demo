@@ -1,17 +1,19 @@
-# demo  Spring Boot REST CRUD API
+# Demo  App
+ Its a demo Student crud Application.
+ There are 5 API's for doing crud operation like get,get all,create,update and delete.
 
 # Steps to Setup
-# Clone the application
-https://github.com/jubydullakber/demo.git
+# Clone the application 
+ https://github.com/jubydullakber/demo.git
 
-open src/main/resources/application.properties
+ open src/main/resources/application.properties
 
-change spring.datasource.url,spring.datasource.driverClassName,spring.datasource.username and spring.datasource.password as per your DB installation
+ change spring.datasource.url,spring.datasource.driverClassName,spring.datasource.username and spring.datasource.password as per your DB installation
 
 # Build and run the app using maven
 
-  mvn package
-  java -jar target/spring-boot-rest-api-tutorial-0.0.1-SNAPSHOT.jar
+  mvn clean install
+  java -jar target/demo-0.0.1-SNAPSHOT.jar
   Alternatively, you can run the app without packaging it using -
 
   mvn spring-boot:run
@@ -21,11 +23,25 @@ change spring.datasource.url,spring.datasource.driverClassName,spring.datasource
  For Api Documentation used Open API url http://localhost:8080/swagger-ui/index.html
 
 # Postmant Collention
- Postman collection also find in this repo.
+ Postman collection also find in this repo[student].
 
 # Container
 For Containerize used Docker.can run with command docker-compose up.
 
-#Trace
+# Trace
 For distributed tracing used zipkin server.url : http://localhost:9411/zipkin/
 
+# Api List 
+Find all active student /api/v1/student
+Find active student by name /api/v1/student/{name}
+Create a student :8080/api/v1/student
+  Request Body :
+  {
+    "name":""
+  }
+Update a student/api/v1/student/{name}
+Request Body :
+  {
+    "name":""
+  }
+Delete a student /api/v1/student/{name}
